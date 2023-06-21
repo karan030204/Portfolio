@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+@font-face {
+    font-family: "circularstd-light";
+    src: url("../src/Fonts/circularstd-light.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "circularstd-medium";
+    src: url("../src/Fonts/circularstd-light.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "circularstd-book";
+    src: url("../src/Fonts/circularstd-book.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "circularstd-bold";
+    src: url("../src/Fonts/circularstd-bold.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "circularstd-black";
+    src: url("../src/Fonts/circularstd-light.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "AquireLight";
+    src: url("../src/Fonts/AquireLight-YzE0o.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "AquireLight";
+    src: url("../src/Fonts/AquireBold-8Ma60.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Markpro_bold";
+    src: url("../src/Fonts/Mark\ Pro\ Bold.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  /* //Italic fonts */
+  @font-face {
+    font-family: "Acumin_bold";
+    src: url("../src/Fonts/Acumin-BdItPro.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  /* //Crafting font */
+  @font-face {
+    font-family: "CABINSKETCH-BOLD";
+    src: url("../src/Fonts/CABINSKETCH-BOLD.OTF") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CABINSKETCH-BOLD";
+    src: url("../src/Fonts/GothamHTF-Bold.otf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+

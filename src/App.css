@@ -5,7 +5,10 @@
 
 body{
     margin: 0;
+    /* color: white; */
     padding: 0;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
     background-color: black;
 }
 
@@ -98,7 +101,7 @@ body{
   }
 
   @font-face {
-    font-family: "CABINSKETCH-BOLD";
+    font-family: "gotham-bold";
     src: url("../src/Fonts/GothamHTF-Bold.otf") format("truetype");
 
     font-weight: normal;

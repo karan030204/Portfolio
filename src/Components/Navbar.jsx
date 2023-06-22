@@ -57,7 +57,7 @@ const Navbar = () => {
 
       {/* Left Navbar */}
 
-      <div class="left-navbar">
+      {/* <div class="left-navbar">
         <div class="left-navbar-content">
             <span className="linkedin">
               <TfiGithub color="rgba(255,255,255,0.7)" size={20} />
@@ -71,7 +71,7 @@ const Navbar = () => {
 
         </div>
             <span className="follow link">Scroll</span>
-      </div>
+      </div> */}
 
       {/* <div className="left-navbar">
         <div className="l-navbar-content">

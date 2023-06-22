@@ -1,8 +1,9 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const More_About_me = () => {
   return (
-    <div>More_About_me</div>
+    <div><Navbar/></div>
   )
 }
 

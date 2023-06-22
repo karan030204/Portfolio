@@ -8,7 +8,7 @@
   position: fixed;
   width: 100%;
   overflow: hidden;
-  z-index: 999;
+  z-index: 999999;
 }
 .t-navbar-content {
   margin: 1em 25em;
@@ -17,15 +17,14 @@
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0);
   border-radius: 40px;
   padding: 20px 30px 0 30px;
   border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
+  z-index: 999;
 
   backdrop-filter: blur(2px);
 }
-
-
 
 .navbar-hamburger {
   display: flex;
@@ -33,105 +32,32 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -4px;
+  top: 4px;
 }
-
+.navbar-logo {
+  font-family: "AquireBold";
+  color: white;
+  font-size: 1.3em;
+}
 /* ALL */
 
 .hamburger .line {
   height: 4px;
   background-color: #ecf0f1;
   display: block;
-  margin: 6px auto;
+  margin: 6px -16px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .hamburger.is-active .line {
-  height: 7px;
+  height: 4px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
-
-.navbar-hamburger .menu {
-  font-family: "Nunito";
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 700;
-  position: relative;
-  top: 2px;
-  font-size: 12px;
-}
-
-.hamburger:hover {
-  cursor: pointer;
-}
-
-/* NINE */
-
-#hamburger-1 {
-  position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#hamburger-1.is-active {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#hamburger-1::before {
-  content: "";
-  position: absolute;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 85px;
-  height: 85px;
-  border: 5px solid transparent;
-  top: calc(50% - 35px);
-  left: calc(50% - 35px);
-  border-radius: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#hamburger-1.is-active:before {
-  border: 2px solid #ecf0f1;
-  cursor: pointer;
-}
-
-.navbar-hamburger:hover #hamburger-1.is-active:before {
-  transition: transform-scale 0.5s ease-out, box-shadow 0.05s ease-out;
-  transform: scale(1.05);
-  box-shadow: 0.5px 0.5px 8px 0.5px rgba(255, 255, 255, 0.9) inset;
-  cursor: pointer;
-}
-
-#hamburger-1.is-active .line {
-  width: 35px;
-}
-
-#hamburger-1.is-active .line:nth-child(2) {
-  opacity: 0;
-}
-
-#hamburger-1.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(13px);
-  -ms-transform: translateY(13px);
-  -o-transform: translateY(13px);
-  transform: translateY(13px);
-}
-
-#hamburger-1.is-active .line:nth-child(3) {
-  -webkit-transform: translateY(-13px) rotate(90deg);
-  -ms-transform: translateY(-13px) rotate(90deg);
-  -o-transform: translateY(-13px) rotate(90deg);
-  transform: translateY(-13px) rotate(90deg);
-}
-
 
 .content {
   margin: 10px 0 0 57px;
@@ -147,7 +73,7 @@
   left: 0px;
 }
 
-.left-navbar-content{
+.left-navbar-content {
   height: 30vh;
   width: 50px;
   display: flex;
@@ -155,27 +81,19 @@
   justify-content: space-around;
   align-items: center;
   padding-bottom: 7em;
-
 }
 .left-navbar-content span {
   color: #fff;
 }
 
 .follow {
-  
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 100;
   color: #fff;
-  transform: rotate(270deg);  
+  transform: rotate(270deg);
 }
 
-
 /* --------------------------------------------------------------LEFT NAVBAR-------------------------------------------------------------- */
-
-
-
-
-
 
 .scroll-arrow {
   font-family: "Inter";
@@ -262,8 +180,6 @@
   gap: 8em;
 }
 
-
-
 .b-navbar-content p {
   font-family: "Inter";
   color: rgba(255, 255, 255, 0.8);
@@ -276,10 +192,7 @@
   transform: scale(1.1);
 }
 
-
 /* -----------------------------Right navbar ----------------------------- */
-
-
 
 .right-navbar {
   z-index: 999;
@@ -296,15 +209,15 @@
   align-items: flex-end;
 }
 
-.r-navbar-content{
+.r-navbar-content {
   display: flex;
   /* flex-direction: row-reverse; */
   align-items: center;
 
-  gap: 10em ;
+  gap: 10em;
 }
-.r-navbar-content p{
-  font-family: 'Inter';
+.r-navbar-content p {
+  font-family: "Inter";
   font-weight: 200;
   display: flex;
   justify-content: center;
@@ -325,8 +238,6 @@
   color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
-
-
 
 .link1 {
   position: relative;
@@ -359,7 +270,70 @@
   transform: translate(-0.1em, -0.1em);
 }
 
+.inner-menu {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  z-index: 990;
+  background-color: rgba(0, 0, 0);
+  transform: translate(-50%, 50%, 50%);
+  transition: transform 4s ease-in-out;
+}
 
+.inner-menu-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  min-width: none;
+  font-size: 100px;
+  font-family: "Inter";
+  flex-direction: column;
+  z-index: 999;
+  padding: 150px 0 150px 100px;
+  cursor: pointer;
+}
 
+.inner-menu-content .active{
+  color: white;
+}
 
+.inner-menu-content span:hover{
+  color: white;
+}
 
+.inner-menu-content a {
+  text-decoration: none important;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  color: rgba(0, 0, 0, 0);
+  font-family: "Roboto";
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 9999;
+}
+
+.inner-menu-content a {
+  text-decoration: none;
+}
+.inner-menu-content a.active {
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+}
+
+.inner-menu-center-big-text {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  font-weight: 900;
+
+  transform: translate(-10%, -50%);
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 350px;
+  z-index: -1;
+}

@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Pivot as Hamburger, Turn } from "hamburger-react";
 
 import "../Elements/Navbar.css";
+import Mouse from "../MouseMove";
 
 const Navbar = () => {
   const [isToggleClicked, setIsToggleClicked] = useState(false);
@@ -98,9 +99,7 @@ const Navbar = () => {
 
       {/* Right Navbar */}
 
-      <div className="right-navbar">
-        <div className="r-navbar-content"></div>
-      </div>
+   
       {/* <div className="right-navbar">
         <div className="r-navbar-content">
           <div className="r-navbar-menu">

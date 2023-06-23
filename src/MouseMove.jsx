@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const App = ({children}) => {
+const Mouse = ({children}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -38,4 +38,4 @@ const App = ({children}) => {
   );
 };
 
-export default App;
+export default Mouse;

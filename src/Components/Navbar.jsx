@@ -5,6 +5,7 @@ import { Pivot as Hamburger, Turn } from "hamburger-react";
 
 import "../Elements/Navbar.css";
 import Mouse from "../MouseMove";
+import { icons } from "react-icons";
 
 const Navbar = () => {
   const [isToggleClicked, setIsToggleClicked] = useState(false);
@@ -53,6 +54,19 @@ const Navbar = () => {
             <NavLink to="/exp"><span>Exerience</span></NavLink>
           <div className="inner-menu-center-big-text">MENU</div>
           </div>
+          <div className="contact-details">
+            <div className="contact-content">
+                <p className="contact-title">Contact</p>
+                <p className="phone_no">+91 9638935265</p>
+                <p className="Email_id">Dattanikaran25@gmail.com</p>
+
+            </div>
+            <div className="social-media">
+            <TfiGithub color="rgba(255,255,255,0.7)" size={20} />
+            <TfiTwitter color="rgba(255,255,255,0.7)" size={20} />
+            <TfiLinkedin color="rgba(255,255,255,0.7)" size={20} />
+            </div>
+          </div>
         </div>
       )}
 
@@ -61,13 +75,13 @@ const Navbar = () => {
       {/* <div class="left-navbar">
         <div class="left-navbar-content">
             <span className="linkedin">
-              <TfiGithub color="rgba(255,255,255,0.7)" size={20} />
+            
             </span>
             <span className="twitter">
-              <TfiTwitter color="rgba(255,255,255,0.7)" size={20} />
+           
             </span>
             <span className="github">
-              <TfiLinkedin color="rgba(255,255,255,0.7)" size={20} />
+            
             </span>
 
         </div>

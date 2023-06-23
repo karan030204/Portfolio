@@ -19,7 +19,7 @@
   justify-content: space-between;
   background-color: rgba(0, 0, 0);
   border-radius: 40px;
-  padding: 20px 30px 0 30px;
+  padding: 20px 30px 10px 30px;
   border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
   z-index: 999;
 
@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 4px;
+  top: -4px;
 }
 .navbar-logo {
   font-family: "AquireBold";
@@ -283,39 +283,44 @@
   background-color: rgba(0, 0, 0);
   transform: translate(-50%, 50%, 50%);
   transition: transform 4s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .inner-menu-content {
   position: relative;
   display: grid;
-  grid-template-columns: auto ;
-  width: 100%;
-  min-width: none;
-  font-size: 85px;
-  font-family: "Inter";
+  grid-template-columns: auto;
+  /* width: 100%; */
+  font-size: 65px;
+  /* font-family: "Inter"; */
+
   flex-direction: column;
   z-index: 999;
-  padding: 150px 0 150px 100px;
-  cursor: pointer;
+  padding: 120px 0 170px 100px;
 }
 
-.inner-menu-content .active span{
+.inner-menu-content .active span {
   color: white;
 }
 
-.inner-menu-content span:hover{
+.inner-menu-content span:hover {
   color: white;
 }
 
-.inner-menu-content a{
+.inner-menu-content a {
   text-decoration: none important;
   -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 1px;
   color: rgba(0, 0, 0, 0);
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family: "Segoe-bold";
+
   font-weight: 900;
   text-transform: uppercase;
   z-index: 9999;
+  width: fit-content;
 }
 
 .inner-menu-content a {
@@ -329,10 +334,47 @@
 .inner-menu-center-big-text {
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: -25%;
   font-weight: 900;
   transform: translate(-10%, -50%);
   color: rgba(255, 255, 255, 0.1);
   font-size: 350px;
-  z-index: -1;
+  z-index: -2;
+  font-family: "Inter";
+}
+
+.inner-menu .contact-details {
+  font-family: "Segoe";
+  padding: 160px 0 100px 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999999;
+}
+
+.contact-details .contact-title {
+  font-family: "Segoe-bold";
+  font-size: 50px;
+  font-weight: 900;
+  border-bottom: 1px solid white;
+  width: fit-content;
+}
+
+.contact-details .phone_no {
+  padding-top: 1em;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-details .Email_id {
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
 }

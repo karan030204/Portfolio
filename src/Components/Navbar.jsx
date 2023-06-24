@@ -16,6 +16,16 @@ const Navbar = () => {
   return (
     <>
       {/* Top Horizontal Navbar */}
+      {isToggleClicked && (
+        <style>
+          {`
+            body {
+              overflow:hidden
+            }
+          `}
+        </style>
+      )}
+
       <div className="top-navbar">
         <div className="t-navbar-content">
           <div className="t-navbar-inner-content">
@@ -43,8 +53,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {isToggleClicked && (
-        <div className="inner-menu">
+      
+        <div className={`inner-menu ${isToggleClicked ? 'open': 'close'}` }>
           <div className="inner-menu-content">
             <NavLink to="/" className="" ><span>Home</span></NavLink>
             <NavLink to="/about" className=""><span>About</span></NavLink>
@@ -68,7 +78,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      )}
+      
 
       {/* Left Navbar */}
 

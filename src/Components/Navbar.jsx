@@ -54,7 +54,10 @@ const Navbar = () => {
         </div>
       </div>
       
-        <div className={`inner-menu ${isToggleClicked ? 'open': 'close'}` }>
+        <div className={`inner-menu ${isToggleClicked ? 'open': 'close'}` }  style={{
+          transition: "opacity 0.3s ease-in",
+          opacity: isToggleClicked ? 1 : 0,
+        }}>
           <div className="inner-menu-content">
             <NavLink to="/" className="" ><span>Home</span></NavLink>
             <NavLink to="/about" className=""><span>About</span></NavLink>

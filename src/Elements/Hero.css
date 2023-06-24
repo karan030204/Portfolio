@@ -29,7 +29,7 @@
   position: absolute;  
   top: 400px;
   left: 1300px;
-  font-family: 'gotham-bold';
+  font-family: 'Lato';
   font-weight: 900  ;
   z-index: 980;
   color: rgba(255,255,255,0.1);
@@ -46,7 +46,7 @@
   position: absolute;  
   top: 200px;
   right: 490px;
-  font-family: 'Inter';
+  font-family: 'Lato';
   /* color: black; */
   color: rgba(255,255,255,0.95);
   font-weight: 900  ;

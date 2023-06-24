@@ -271,11 +271,20 @@
 }
 
 .inner-menu.close {
+  transform: translate(-50%, 50%, 50%);
+}
+
+.inner-menu.open {
+  transform: translate(-50%, 0, 0);
+}
+
+.inner-menu.close {
   opacity: 0;
 }
-.inner-menu.open {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
+
+
+.inner-menu {
+  transition: transform 0.5s ease-in-out;
   color: black;
   position: fixed;
   top: 0;
@@ -299,10 +308,9 @@
   grid-template-columns: auto;
   /* width: 100%; */
   /* font-family: "Inter"; */
-
   flex-direction: column;
   z-index: 999;
-  padding: 130px 0 170px 100px;
+  padding: 130px 0 120px 100px;
 }
 
 .inner-menu-content .active span::before {
@@ -320,8 +328,8 @@
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
   color: rgba(0, 0, 0, 0);
-  /* font-family: "Roboto"; */
-  font-family: "Inter";
+  font-family: "Lato";
+  /* font-family: "Inter"; */
   font-weight: 900;
   text-transform: uppercase;
   z-index: 9999;
@@ -330,7 +338,7 @@
 
 .inner-menu-content a {
   text-decoration: none;
-  font-size: 50px;
+  font-size: 70px;
 }
 .inner-menu-content a.active {
   color: black;
@@ -339,8 +347,8 @@
 
 .inner-menu-center-big-text {
   position: absolute;
-  top: 50%;
-  left: -25%;
+  top: 30%;
+  left: -65%;
   font-weight: 900;
   transform: translate(-10%, -50%);
   color: rgba(0, 0, 0, 0.15);
@@ -350,7 +358,7 @@
 }
 
 .inner-menu .contact-details {
-  font-family: "Segoe";
+  font-family: "Lato";
   padding: 160px 0 100px 1px;
   display: flex;
   flex-direction: column;
@@ -359,7 +367,7 @@
 }
 
 .contact-details .contact-title {
-  font-family: "Segoe-bold";
+  font-family: "Lato";
   font-size: 50px;
   font-weight: 900;
   border-bottom: 1px solid black;
@@ -369,12 +377,12 @@
 .contact-details .phone_no {
   padding-top: 1em;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 800;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .contact-details .Email_id {
-  font-weight: 500;
+  font-weight: 800;
   font-size: 20px;
   padding-top: 5px;
   color: rgba(0, 0, 0, 0.7);

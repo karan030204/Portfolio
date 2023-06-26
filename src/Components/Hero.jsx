@@ -30,13 +30,14 @@ const Hero = () => {
     <div className="hero-section">
       <div className="hero-content">
         <div className="hero-bg-content">
-          <div>
+          {/* <div className="hero-bg-image"> */}
+            {/* <img src="26.jpeg" alt="" /> */}
             {/* <p>
               Code. Create. Inspire.
               <br /> Crafting digital <br />
               experiences.
             </p> */}
-          </div>
+          {/* </div> */}
         </div>
         <div className="hero-moving-text">
           <p

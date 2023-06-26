@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const Projects = () => {
   return (
-    <div><Navbar/></div>
+    <div></div>
   )
 }
 

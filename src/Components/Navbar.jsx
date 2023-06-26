@@ -47,97 +47,86 @@ const Navbar = () => {
                 toggled={isToggleClicked}
                 onToggle={(toggled) => {}}
               />
-
-              
             </div>
           </div>
         </div>
       </div>
-      
-        <div className={`inner-menu ${isToggleClicked ? 'open': 'close'}` }  style={{
+
+      <div
+        className={`inner-menu ${isToggleClicked ? "open" : "close"}`}
+        style={{
           transition: "opacity 0.3s ease-in",
           opacity: isToggleClicked ? 1 : 0,
-        }}>
-          <div className="inner-menu-content">
-            <NavLink to="/" className="" ><span>Home</span></NavLink>
-            <NavLink to="/about" className=""><span>About</span></NavLink>
-            <NavLink to="/skills" className=""><span>Skills</span></NavLink>
-            <NavLink to="/resume" className=""><span>Resume</span></NavLink>
-            <NavLink to="/projects" className=""><span>Projects</span></NavLink>
-            <NavLink to="/exp"><span>Exerience</span></NavLink>
+        }}
+      >
+        <div className="inner-menu-content">
+          <NavLink to="/" className="">
+            <span>Home</span>
+          </NavLink>
+          <NavLink to="/about" className="">
+            <span>About</span>
+          </NavLink>
+          <NavLink to="/skills" className="">
+            <span>Skills</span>
+          </NavLink>
+          <NavLink to="/resume" className="">
+            <span>Resume</span>
+          </NavLink>
+          <NavLink to="/projects" className="">
+            <span>Projects</span>
+          </NavLink>
+          <NavLink to="/exp">
+            <span>Exerience</span>
+          </NavLink>
           <div className="inner-menu-center-big-text">MENU</div>
+        </div>
+        <div className="contact-details">
+          <div className="contact-content">
+            <p className="contact-title">Contact</p>
+            <p className="phone_no">+91 9638935265</p>
+            <p className="Email_id">Dattanikaran25@gmail.com</p>
           </div>
-          <div className="contact-details">
-            <div className="contact-content">
-                <p className="contact-title">Contact</p>
-                <p className="phone_no">+91 9638935265</p>
-                <p className="Email_id">Dattanikaran25@gmail.com</p>
-
-            </div>
-            <div className="social-media">
+          <div className="social-media">
             <TfiGithub color="rgba(255,255,255,0.7)" size={20} />
             <TfiTwitter color="rgba(255,255,255,0.7)" size={20} />
             <TfiLinkedin color="rgba(255,255,255,0.7)" size={20} />
-            </div>
           </div>
-        </div>
-      
-
-      {/* Left Navbar */}
-
-      {/* <div class="left-navbar">
-        <div class="left-navbar-content">
-            <span className="linkedin">
-            
-            </span>
-            <span className="twitter">
-           
-            </span>
-            <span className="github">
-            
-            </span>
-
-        </div>
-            <span className="follow link">Scroll</span>
-      </div> */}
-
-      {/* <div className="left-navbar">
-        <div className="l-navbar-content">
-          <div className="scroll-arrow ">
-            <a href="#" class="link">
-              <p>Scroll</p>
-            </a>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Bottom navbar */}
-      {/* <div className="bottom-navbar">
-        <div className="b-navbar-content">
-          <div className="icons">
-            <span className="linkedin"><TfiGithub color="rgba(255,255,255,0.7)" size={20}/></span>
-            <span className="twitter"><TfiTwitter color="rgba(255,255,255,0.7)" size={20}/></span>
-            <span className="github"><TfiLinkedin color="rgba(255,255,255,0.7)" size={20}/></span>
-          </div>
-          <p className="link1">Follow</p>
         </div>
       </div>
- */}
 
-      {/* Right Navbar */}
 
-   
-      {/* <div className="right-navbar">
-        <div className="r-navbar-content">
-          <div className="r-navbar-menu">
-                <Link href="#home" activeClass="active" smooth spy to="home"  >01</Link>
-                <Link href="#about" activeClass="active" smooth spy to="home" >02</Link>
-                <Link href="#tech" >03</Link>
-                <Link href="#projects" >04</Link>
-                <Link href="#exp" >05</Link>
-          </div>
-        </div>
-      </div> */}
+      <div className="right_navbar_body">
+        <nav className="right_navbar">
+          <ul className="right_navbar_ul">
+            <li>
+              <a href="">Follow</a>
+            </li>
+            <li>
+              <a href="" className="border"></a>
+            </li>
+            <li className="icons">
+              <a href="">
+            <TfiTwitter color="rgba(255,255,255,0.7)" size={20} />
+
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <TfiGithub color="rgba(255,255,255,0.7)" size={20} />
+
+
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <TfiLinkedin color="rgba(255,255,255,0.7)" size={20} />
+
+
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </>
   );
 };

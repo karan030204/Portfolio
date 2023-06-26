@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const More_About_me = () => {
   return (
-    <div><Navbar/></div>
+    <div></div>
   )
 }
 

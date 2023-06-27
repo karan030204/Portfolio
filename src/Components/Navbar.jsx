@@ -95,38 +95,6 @@ const Navbar = () => {
       </div>
 
 
-      <div className="right_navbar_body">
-        <nav className="right_navbar">
-          <ul className="right_navbar_ul">
-            <li>
-              <a href="">Follow</a>
-            </li>
-            <li>
-              <a href="" className="border"></a>
-            </li>
-            <li className="icons">
-              <a href="">
-            <TfiTwitter color="rgba(255,255,255,0.7)" size={20} />
-
-              </a>
-            </li>
-            <li>
-              <a href="">
-              <TfiGithub color="rgba(255,255,255,0.7)" size={20} />
-
-
-              </a>
-            </li>
-            <li>
-              <a href="">
-              <TfiLinkedin color="rgba(255,255,255,0.7)" size={20} />
-
-
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </>
   );
 };

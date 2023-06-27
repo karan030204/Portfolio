@@ -5,21 +5,28 @@
 /* --------------------------------------------------------------TOP NAVBAR-------------------------------------------------------------- */
 
 .top-navbar {
-  position: fixed;
-  width: 100%;
   overflow: hidden;
-  z-index: 999999;
+  z-index: 9999;
+  width: 100%;
 }
 .t-navbar-content {
-  margin: 1em 25em;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  /* flex-direction: row-reverse; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 .t-navbar-inner-content {
+  position: fixed;
+  padding: 10px 20px;
   display: flex;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 35%;
+  max-width: 45%;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255);
   border-radius: 40px;
-  padding: 20px 30px 10px 30px;
   border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
   z-index: 999;
 
@@ -36,15 +43,16 @@
 }
 .navbar-logo {
   font-family: "AquireBold";
-  color: white;
+  color: black;
   font-size: 1.3em;
 }
 /* ALL */
 
 .hamburger .line {
   height: 4px;
-  background-color: #ecf0f1;
+  background-color: black;
   display: block;
+  color: black;
   margin: 6px -16px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -54,7 +62,8 @@
 .hamburger.is-active .line {
   height: 4px;
   display: flex;
-
+  color: black;
+  background-color: black;
   justify-content: center;
   align-items: center;
 }
@@ -304,13 +313,13 @@
 
 .inner-menu-content {
   position: relative;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  gap: 35px;
   /* width: 100%; */
   /* font-family: "Inter"; */
   flex-direction: column;
   z-index: 999;
-  padding: 130px 0 120px 100px;
+  padding: 180px 0 120px 100px;
 }
 
 .inner-menu-content .active {
@@ -334,12 +343,10 @@
   z-index: 9999;
   width: fit-content;
   filter: blur(1.5px);
+  text-decoration: none;
+  font-size: 80px;
 }
 
-.inner-menu-content a {
-  text-decoration: none;
-  font-size: 70px;
-}
 .inner-menu-content a.active {
   color: black;
   filter: none;
@@ -356,11 +363,12 @@
   font-size: 350px;
   z-index: -2;
   font-family: "Inter";
+  /* word-break: break-word; */
 }
 
 .inner-menu .contact-details {
   font-family: "Lato";
-  padding: 160px 0 100px 1px;
+  padding: 175px 0 84px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -369,7 +377,7 @@
 
 .contact-details .contact-title {
   font-family: "Lato";
-  font-size: 50px;
+  font-size: 9px;
   font-weight: 900;
   border-bottom: 1px solid black;
   width: fit-content;
@@ -377,21 +385,21 @@
 
 .contact-details .phone_no {
   padding-top: 1em;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .contact-details .Email_id {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 30px;
   padding-top: 5px;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .social-media {
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .right_navbar_body {
@@ -441,4 +449,301 @@
   color: white;
   font-family: "Inter";
   font-weight: 300;
+}
+
+@media all and (max-width: 1199.98px) {
+  /* top navbar */
+  .t-navbar-content {
+    padding: 35px 0px;
+  }
+  .t-navbar-inner-content {
+    min-width: 44%;
+  }
+
+  /* Inner menu  */
+
+  .inner-menu-content {
+    display: flex;
+    flex-direction: column;
+    padding: 225px 0 120px 100px;
+  }
+  .inner-menu-content a {
+    font-size: 70px;
+  }
+  .contact-details .contact-title {
+    font-size: 70px;
+  }
+
+  .contact-details .social-media{
+    gap: 40px;
+  }
+
+  .contact-details .phone_no,
+  .contact-details .Email_id {
+    font-size: 25px;
+  }
+  .inner-menu .contact-details {
+    padding: 225px 0 278px 30px;
+  }
+
+  .inner-menu-center-big-text {
+    left: -10%;
+  }
+}
+
+@media all and (max-width: 991.98px) {
+  .inner-menu-content {
+    padding: 245px 0 120px 40px;
+  }
+  .inner-menu-content a {
+    font-size: 60px;
+  }
+
+  .contact-details .contact-title {
+    font-size: 60px;
+  }
+
+  .contact-details .phone_no,
+  .contact-details .Email_id {
+    font-size: 25px;
+  }
+  .contact-details .social-media {
+    gap: 30px;
+  }
+  .inner-menu .contact-details {
+    padding: 245px 0 328px 30px;
+  }
+
+  .inner-menu-center-big-text {
+    left: -15%;
+    font-size: 300px;
+  }
+}
+
+@media all and (max-width: 767.98px) {
+  .inner-menu-content {
+    padding: 275px 0 50px 5px;
+  }
+  .inner-menu-content a {
+    font-size: 50px;
+  }
+
+  .contact-details .contact-title {
+    font-size: 50px;
+  }
+
+  .contact-details .phone_no,
+  .contact-details .Email_id {
+    font-size: 20px;
+  }
+  .contact-details .social-media {
+    gap: 20px;
+  }
+  .inner-menu .contact-details {
+    padding: 270px 0 358px 35px;
+  }
+
+  .inner-menu-center-big-text {
+    left: -10%;
+    font-size: 250px;
+  }
+}
+
+@media all and (max-width: 599.98px) {
+  .inner-menu-content {
+    padding: 305px 0 50px 8px;
+  }
+  .inner-menu-content a {
+    font-size: 40px;
+  }
+
+  .contact-details .contact-title {
+    font-size: 40px;
+  }
+
+  .contact-details .phone_no,
+  .contact-details .Email_id {
+    font-size: 20px;
+  }
+  .contact-details .social-media {
+    gap: 10px;
+  }
+  .inner-menu .contact-details {
+    padding: 300px 0 398px 5px;
+  }
+
+  .inner-menu-center-big-text {
+    left: -10%;
+    font-size: 200px;
+  }
+}
+
+
+@media all and (max-width: 480.98px){
+  .inner-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-menu-content {
+    
+    align-items: center;
+    padding: 500px 0 50px 8px;
+    text-align: center;
+  }
+  .inner-menu-content a {
+    font-size: 65px;
+  }
+
+  .contact-details .contact-title {
+
+
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .contact-details .phone_no,
+  .contact-details .Email_id {
+    font-size: 30px;
+  }
+  .contact-details .social-media {
+    gap: 49px;
+    bottom: 12px;
+    position: absolute;
+  }
+  .inner-menu .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 398px 5px;
+  }
+
+  .inner-menu-center-big-text {
+    
+    top: 73%;
+    left: 18%;
+    font-size: 200px;
+    word-break: break-word;
+
+  }
+  
+}
+
+@media all and (max-width:374.98px) {
+  .inner-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-menu-content {
+    
+    align-items: center;
+    padding: 500px 0 50px 8px;
+    text-align: center;
+  }
+  .inner-menu-content a {
+    font-size: 58px;
+  }
+
+  .contact-details .contact-title {
+
+
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .contact-details .phone_no,
+  .contact-details .Email_id {
+    font-size: 30px;
+  }
+  .contact-details .social-media {
+    gap: 49px;
+    bottom: 12px;
+    position: absolute;
+  }
+  .inner-menu .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 398px 5px;
+  }
+
+  .inner-menu-center-big-text {
+    
+    top: 73%;
+    left: 18%;
+    font-size: 180px;
+    word-break: break-word;
+
+  }
+}
+
+@media all and (max-width:319.98px) {
+  .inner-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-menu-content {
+    
+    align-items: center;
+    padding: 500px 0 50px 8px;
+    text-align: center;
+  }
+  .inner-menu-content a {
+    font-size: 40px;
+  }
+
+  .contact-details .contact-title {
+
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .contact-details .phone_no,
+  .contact-details .Email_id {
+    font-size: 20px;
+  }
+  .contact-details .social-media {
+    gap: 19px;
+    bottom: 12px;
+    position: absolute;
+  }
+  .inner-menu .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 398px 5px;
+  }
+
+  .inner-menu-center-big-text {
+    
+    top: 73%;
+    left: 18%;
+    font-size: 150px;
+    word-break: break-word;
+
+  }
 }

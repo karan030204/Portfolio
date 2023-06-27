@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TfiGithub, TfiTwitter, TfiLinkedin } from "react-icons/tfi";
+import {MdEmail} from 'react-icons/md'
 import { Link, NavLink } from "react-router-dom";
 import { Pivot as Hamburger, Turn } from "hamburger-react";
 
@@ -19,9 +20,7 @@ const Navbar = () => {
       {isToggleClicked && (
         <style>
           {`
-            body {
-              overflow:hidden
-            }
+            
           `}
         </style>
       )}
@@ -38,7 +37,7 @@ const Navbar = () => {
             <div className="navbar-hamburger">
               <Hamburger
                 easing="ease-in"
-                color="white"
+                color="black"
                 toggle={handleHamburger}
                 size={452}
                 label="show menu"
@@ -82,14 +81,15 @@ const Navbar = () => {
         </div>
         <div className="contact-details">
           <div className="contact-content">
-            <p className="contact-title">Contact</p>
+            <p className="contact-title">CONTACT</p>
             <p className="phone_no">+91 9638935265</p>
-            <p className="Email_id">Dattanikaran25@gmail.com</p>
+            {/* <p className="Email_id">Dattanikaran25@gmail.com</p> */}
           </div>
           <div className="social-media">
-            <TfiGithub color="rgba(255,255,255,0.7)" size={20} />
-            <TfiTwitter color="rgba(255,255,255,0.7)" size={20} />
-            <TfiLinkedin color="rgba(255,255,255,0.7)" size={20} />
+            <TfiGithub color="rgba(0,0,0,0.7)" size={40} />
+            <TfiTwitter color="rgba(0,0,0,0.7)" size={40} />
+            <TfiLinkedin color="rgba(0,0,0,0.7)" size={40} />
+            <MdEmail color="rgba(0,0,0,0.7)" size={42} />
           </div>
         </div>
       </div>

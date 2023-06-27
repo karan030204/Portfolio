@@ -35,7 +35,7 @@ const Hero = () => {
                 <p className="hero-title">DESIGN THE <br/> DREAM</p>
                 <p className="hero-description">DESIGNER WITH A PASSION  <br/> FOR CREATING INTUITIVE <br/> DIGITAL EXPERIENCES</p>
           </div>
-              <div className="hero-moving-text1">
+              {/* <div className="hero-moving-text1">
                 <p
                   className="scrolling-text1"
                   style={{
@@ -45,7 +45,7 @@ const Hero = () => {
                 >
                   WEB DEVELOPER 
                 </p>
-              </div>
+              </div> */}
           <div className="hero-moving-text">
             {/* <p
               className="scrolling-text"

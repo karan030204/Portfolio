@@ -126,6 +126,53 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Britanica-ExtraBold";
+  src: url("../src/Fonts/Britanica-ExtraBold\ Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Britanica-regular";
+  src: url("../src/Fonts/Britanica\ Condensed\ Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Britanica-semi-expanded-regular";
+  src: url("../src/Fonts/Britanica\ Semi\ Expanded\ Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Britanica-semi-expanded-light";
+  src: url("../src/Fonts/Britanica\ Semi\ Expanded\ Light.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Britanica-semi-expanded-thin";
+  src: url("../src/Fonts/Britanica\ Semi\ Expanded\ Thin.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
 .box {

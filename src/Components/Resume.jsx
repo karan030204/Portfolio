@@ -4,7 +4,8 @@ import Navbar from './Navbar'
 const Resume = () => {
   return (
     <div>
-        Resume</div>
+        Resume
+        <Navbar/></div>
   )
 }
 

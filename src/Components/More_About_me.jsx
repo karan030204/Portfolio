@@ -3,7 +3,9 @@ import Navbar from './Navbar'
 
 const More_About_me = () => {
   return (
-    <div></div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
 

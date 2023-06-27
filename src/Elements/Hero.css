@@ -1,87 +1,108 @@
 .hero-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  position: relative;
+}
+.hero-bg-content {
+  position: relative;
   width: 100%;
   height: 100vh;
-}
-.hero-bg-content{
-  position: relative;
-  width:100% ;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-size: 5.5em;
-  font-family: 'Markpro_bold';
-  font-weight: 900;
-  color: rgba(255,255,255,0.8);
+  z-index: 899;
+  color: rgba(255, 255, 255);
 }
 
-
-.page-no .first-page{
+.hero-bg-content .hero-title {
+  font-weight: 900;
+  font-family: "Britanica-semi- expanded-thin";
+  font-size: 11.5em;
+  text-shadow: 3px 0px 7px rgba(255, 255, 255, 0.1),
+    -3px 0px 7px rgba(255, 255, 255, 0.1), 0px 4px 7px rgba(255, 255, 255, 0.1);
+}
+.hero-bg-content .hero-title::before,
+.hero-bg-content .hero-title::after {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 405px;
   position: absolute;
+  width: 400px;
+  z-index: 2;
+}
+.hero-bg-content .hero-title::after {
+  right: 0;
   top: 0;
-  left: -30px;
-  font-weight: 900;
-  font-family: 'Inter';
-  font-size: 120px;
-  color: rgba(255,255,255,0.1);
+  transform: rotateZ(180deg);
 }
 
-.hero-moving-text{
-  position: absolute;  
-  top: 500px;
-  left: 1300px;
-  font-family: 'Lato';
-  font-weight: 900  ;
-  z-index: 980;
-  color: rgba(255,255,255,0.1);
-  /* -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white; */
-  font-size: 250px;
+.hero-bg-content .hero-description {
+  position: absolute;
+  right: 150px;
+  bottom: 150px;
+  font-weight: 100;
+  text-align: right;
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 1.6em;
+  letter-spacing: 1.5px;
+}
+
+.hero-bg-content .hero-description::before {
+  content: "";
+  border-top: 1px solid white;
+  position: absolute;
+  top: 35px;
+  left: -130px;
+  height: 200px;
+  width: 80px;
+}
+
+.hero-moving-text {
+  position: relative;
+  top: 0px;
+  left: 1500px;
+  font-family: "Lato";
+  font-weight: 900;
+  z-index: 100;
+  color: rgba(255, 255, 255, 0.15);
+
+  font-size: 100px;
   transition: transform 2s ease;
   white-space: nowrap;
   z-index: -1;
 }
 
-.hero-moving-text1{
-  transform: rotate(90deg);
-  position: absolute;  
-  top: 200px;
-  right: 490px;
-  font-family: 'Lato';
-  /* color: black; */
-  color: rgba(255,255,255,0.95);
-  font-weight: 900  ;
-  z-index: 980;
-  font-size: 250px;
+.hero-moving-text1 {
+  /* transform: rotate(90deg);
+   */
+  position: relative;
+  left: 350px;
+  font-family: "Lato";
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: 900;
+  z-index: -1;
+  font-size: 200px;
   transition: transform 0.3s ease;
   white-space: nowrap;
-  z-index: 0;
-
 }
-
 
 /* hero-bg-image */
-
-.hero-bg-image{
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-bg-image img {
-  /* position: absolute; */
-  width: 50%;
-  height: 130vh;
-}
-  
 
 /* Right navbar */
 .right_navbar_body {
   position: absolute;
-  right: 5px;
-  top: 140px;
+  right: 15px;
+  top: 400px;
   /* overflow: scroll;  */
   overflow-x: hidden;
   /* height: 100%; */
@@ -126,8 +147,3 @@
   font-family: "Inter";
   font-weight: 300;
 }
-
-
-
-
-

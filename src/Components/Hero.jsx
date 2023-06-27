@@ -32,17 +32,22 @@ const Hero = () => {
       <div className="hero-section">
         <div className="hero-content">
           <div className="hero-bg-content">
-            {/* <div className="hero-bg-image"> */}
-            {/* <img src="26.jpeg" alt="" /> */}
-            {/* <p>
-              Code. Create. Inspire.
-              <br /> Crafting digital <br />
-              experiences.
-            </p> */}
-            {/* </div> */}
+                <p className="hero-title">DESIGN THE <br/> DREAM</p>
+                <p className="hero-description">DESIGNER WITH A PASSION  <br/> FOR CREATING INTUITIVE <br/> DIGITAL EXPERIENCES</p>
           </div>
+              <div className="hero-moving-text1">
+                <p
+                  className="scrolling-text1"
+                  style={{
+                    width: `${windowWidth}px`,
+                    transform: `translateX(${translateY}px)`,
+                  }}
+                >
+                  WEB DEVELOPER 
+                </p>
+              </div>
           <div className="hero-moving-text">
-            <p
+            {/* <p
               className="scrolling-text"
               style={{
                 width: `${windowWidth}px`,
@@ -50,18 +55,7 @@ const Hero = () => {
               }}
             >
               DEVELOPER
-            </p>
-          </div>
-          <div className="hero-moving-text1">
-            <p
-              className="scrolling-text1"
-              style={{
-                width: `${windowWidth}px`,
-                transform: `translateX(${translateY}px)`,
-              }}
-            >
-              WEBSITE
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -69,12 +63,12 @@ const Hero = () => {
       <div className="right_navbar_body">
         <nav className="right_navbar">
           <ul className="right_navbar_ul">
-            <li>
+            {/* <li>
               <a href="">Follow</a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="" className="border"></a>
-            </li>
+            </li> */}
             <li className="icons">
               <a href="">
                 <TfiTwitter color="rgba(255,255,255,0.7)" size={20} />

@@ -17,13 +17,20 @@ const Navbar = () => {
   return (
     <>
       {/* Top Horizontal Navbar */}
-      {isToggleClicked && (
-        <style>
-          {`
-            
-          `}
-        </style>
-      )}
+      {isToggleClicked ? (
+  <style>{`
+   .top-navbar{
+    background-color:white;
+    position:fixed;
+   }
+  `}</style>
+) : (
+  <style>{`
+
+  `}</style>
+)}
+
+
 
       <div className="top-navbar">
         <div className="t-navbar-content">
@@ -58,6 +65,7 @@ const Navbar = () => {
           opacity: isToggleClicked ? 1 : 0,
         }}
       >
+        <div className="inner-menu-details">
         <div className="inner-menu-content">
           <NavLink to="/" className="">
             <span>Home</span>
@@ -86,11 +94,12 @@ const Navbar = () => {
             {/* <p className="Email_id">Dattanikaran25@gmail.com</p> */}
           </div>
           <div className="social-media">
-            <TfiGithub color="rgba(0,0,0,0.7)" size={40} />
-            <TfiTwitter color="rgba(0,0,0,0.7)" size={40} />
-            <TfiLinkedin color="rgba(0,0,0,0.7)" size={40} />
-            <MdEmail color="rgba(0,0,0,0.7)" size={42} />
+            <TfiGithub color="rgba(0,0,0,0.7)"  className="social-icons" />
+            <TfiTwitter color="rgba(0,0,0,0.7)" className="social-icons" />
+            <TfiLinkedin color="rgba(0,0,0,0.7)" className="social-icons" />
+            <MdEmail color="rgba(0,0,0,0.7)" className="social-icons" />
           </div>
+        </div>
         </div>
       </div>
 

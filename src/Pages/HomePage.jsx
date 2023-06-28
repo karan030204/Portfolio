@@ -11,10 +11,10 @@ const HomePage = () => {
     <div>
         <Navbar/>
         {/* <Hero/> */}
-        {/* <Experience/> */}
-        {/* <About/>
+        <Experience/>
+        <About/>
         <Tech/>
-        <Projects/> */}
+        <Projects/>
     </div>
   )
 }

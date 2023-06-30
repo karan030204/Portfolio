@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Elements/Hero.css";
 import { TfiGithub, TfiTwitter, TfiLinkedin } from "react-icons/tfi";
+import HorizontalScrollText from "../HorizontalScrollText";
 
 const Hero = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -30,12 +31,7 @@ const Hero = () => {
   return (
     <>
       <div className="hero-section">
-        <div className="hero-content">
-          <div className="hero-bg-content">
-                <p className="hero-title">DESIGN THE <br/> DREAM</p>
-                <p className="hero-description">DESIGNER WITH A PASSION  <br/> FOR CREATING INTUITIVE <br/> DIGITAL EXPERIENCES</p>
-          </div>
-              {/* <div className="hero-moving-text1">
+        <div className="hero-moving-text1">
                 <p
                   className="scrolling-text1"
                   style={{
@@ -45,9 +41,25 @@ const Hero = () => {
                 >
                   WEB DEVELOPER 
                 </p>
-              </div> */}
+              </div>
+        <div className="hero-content">
+          <div className="hero-bg-content">
+                <p className="hero-title"><HorizontalScrollText>DESIGN THE <br/> DREAM</HorizontalScrollText></p>
+                <p className="hero-description">DESIGNER WITH A PASSION  <br/> FOR CREATING INTUITIVE <br/> DIGITAL EXPERIENCES</p>
+          </div>
+              <div className="hero-moving-text1">
+                <p
+                  className="scrolling-text1"
+                  style={{
+                    width: `${windowWidth}px`,
+                    transform: `translateX(${translateY}px)`,
+                  }}
+                >
+                  WEB DEVELOPER 
+                </p>
+              </div>
           <div className="hero-moving-text">
-            {/* <p
+            <p
               className="scrolling-text"
               style={{
                 width: `${windowWidth}px`,
@@ -55,7 +67,7 @@ const Hero = () => {
               }}
             >
               DEVELOPER
-            </p> */}
+            </p>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import Mouse from "../MouseMove";
 import HorizontalScrollText from "../HorizontalScrollText";
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
-import {BiLogoLinkedin } from 'react-icons/bi'
+// import {BiLogoLinkedin } from 'react-icons/bi'
 
 const Navbar1 = () => {
   const [isToggleClicked, setIsToggleClicked] = useState(false);
@@ -77,10 +77,10 @@ const Navbar1 = () => {
                     </Mouse>
                     <div className="phone_no">+91 9638935265</div>
                     <div className="email_id">Dattanikaran25@gmail.com</div>
-                    <div className="icons">  <FaGithub size={30} color="black" />
-                    <BiLogoLinkedin size={30} color="black" />
-                    <FaTwitter size={30} color="black" />
-                    <FaInstagram size={30} color="black" /></div>
+                    <div className="icons">  <FaGithub size={30} color="white" />
+                    {/* <BiLogoLinkedin size={30} color="black" /> */}
+                    <FaTwitter size={30} color="white" />
+                    <FaInstagram size={30} color="white" /></div>
                   
                   </div>
                   <div className="contact-btn">

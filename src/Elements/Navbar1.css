@@ -34,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255);
+  background-color: black;
   z-index: -1;
   overflow-y: auto;
 }
@@ -55,7 +55,7 @@
 .inner_menu .left-menu a {
   width: fit-content;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: white;
   font-family: "Lato";
   font-size: 100px;
   text-decoration: none;
@@ -66,24 +66,26 @@
 }
 
 .inner_menu .left-menu a:hover {
-  color: black;
+  color: white;
 }
 .menu-title {
   position: relative;
 }
 
 .left-menu number {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   position: absolute;
   font-family: 100;
   top: 11px;
   left: 0;
   font-size: 20px;
-  color: black;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .left-menu a.active{
-  color: rgba(0,0,0);
+  color:white;
+  text-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.9);
 }
 
 .inner_menu .right-menu {
@@ -97,17 +99,17 @@
   font-family: "Lato";
   font-size: 50px;
   font-weight: 900;
-  -webkit-text-stroke-color: rgba(0,0,0, 0.8);
+  -webkit-text-stroke-color: white;
   /* -webkit-text-stroke-width: 2px; */
-  color: rgba(0,0,0);
-  border-bottom: 1px solid black;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 .right-menu .phone_no{
   font-size: 15px;
   font-family: 'Lato';
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   padding-top: 10px;
 
 }
@@ -116,7 +118,7 @@
   font-size: 15px;
   font-family: 'lato';
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .right-menu .lets-colloborate{
@@ -124,13 +126,14 @@
   font-size: 50px;
   font-weight: 900;
   padding-bottom: 15px;
+  color: rgba(255, 255, 255, 0.9);
 
 }
 
 .right-menu button{
   outline: none;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   border-radius: 30px;
   border: none;
   padding: 15px 50px 15px 50px;
@@ -157,7 +160,7 @@
   top: -50px;
   font-family: "Inter";
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.1);
   font-size: 300px;
   width: fit-content;
   word-break: break-word;

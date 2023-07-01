@@ -17,8 +17,8 @@ const Mouse = ({children}) => {
   const handleMouseMove = (event) => {
     if (isHovered) {
       const elementRect = event.target.getBoundingClientRect();
-      const offsetX = event.clientX - elementRect.left - 50;
-      const offsetY = event.clientY - elementRect.top - 50;
+      const offsetX = event.clientX - elementRect.left ;
+      const offsetY = event.clientY - elementRect.top ;
       setPosition({ x: offsetX, y: offsetY });
     }
   };

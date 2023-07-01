@@ -1,23 +1,29 @@
 .top-navbar {
+  display: flex;
+  justify-content: center;
   position: fixed;
   width: 100%;
+  /* display: flex; */
   overflow-x: hidden;
   background-color: rgba(255, 255, 255);
   height: auto;
-  padding: 20px 15px;
+  padding: 15px 15px 10px 0;
   z-index: 999;
+  /* max-width: 94%; */
 }
 
 .inner-top-navbar {
   width: 480px;
-  max-width: 94%;
+  max-width: 80%;
   height: 70px;
-  margin: 0 auto;
+  margin: 11px 10px 20px;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 40px;
   display: flex;
   justify-content: space-between;
-  padding: 1px 15px;
+  gap: 0px;
+  padding: 5px 15px;
+  /* padding: 1px 15px; */
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -211,7 +217,7 @@
 
 .inner_menu .right-menu .contact-title {
   font-family: "Lato";
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
   -webkit-text-stroke-color: white;
   /* -webkit-text-stroke-width: 2px; */
@@ -262,6 +268,7 @@
   outline: none;
   background: rgba(255, 255, 255, 0.5);
   color: black;
+  font-weight: 300;
   border-radius: 30px;
   border: none;
   padding: 15px 50px 15px 50px;

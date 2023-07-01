@@ -4,8 +4,19 @@ import { Pivot as Hamburger, Turn } from "hamburger-react";
 import { NavLink } from "react-router-dom";
 import Mouse from "../MouseMove";
 import HorizontalScrollText from "../HorizontalScrollText";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
-// import {BiLogoLinkedin } from 'react-icons/bi'
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaPhone,
+} from "react-icons/fa";
+import {
+  BiLogoLinkedin,
+  BiMailSend,
+  BiPhone,
+  BiSolidPhone,
+} from "react-icons/bi";
 
 const Navbar1 = () => {
   const [isToggleClicked, setIsToggleClicked] = useState(false);
@@ -20,7 +31,6 @@ const Navbar1 = () => {
           <div className="inner-top-navbar">
             <div className="navbar-Logo">KD</div>
             <div className="navbar-hamburger">
-              <Mouse>
                 <Hamburger
                   easing="ease-in"
                   color="white"
@@ -32,7 +42,6 @@ const Navbar1 = () => {
                   toggled={isToggleClicked}
                   onToggle={(toggled) => {}}
                 />
-              </Mouse>
             </div>
           </div>
           {isToggleClicked && (
@@ -71,24 +80,35 @@ const Navbar1 = () => {
                   <div className="center-big-text">MENU</div>
                 </div>
                 <div className="right-menu">
-                  <div className="contact-details"> 
-                    <Mouse>
-                      <span className="contact-title">Contact</span>
-                    </Mouse>
-                    <div className="phone_no">+91 9638935265</div>
-                    <div className="email_id">Dattanikaran25@gmail.com</div>
-                    <div className="icons">  <FaGithub size={30} color="white" />
-                    {/* <BiLogoLinkedin size={30} color="black" /> */}
-                    <FaTwitter size={30} color="white" />
-                    <FaInstagram size={30} color="white" /></div>
-                  
-                  </div>
                   <div className="contact-btn">
+                    <Mouse>
+                      {/* <span className="contact-title">Contact</span> */}
+                    </Mouse>
                     <div className="lets-colloborate">Let's Collaborate!</div>
                     <div>
                       <Mouse>
                         <button>Contact</button>
                       </Mouse>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h1 className="follow">For more Info.</h1>
+                    <div className="contact-details">
+                      <div className="phone_no">
+                        <BiSolidPhone  color="rgba(255,255,255,0.5)" size={25} />
+                        +91 9638935265
+                      </div>
+                      <div className="email_id">
+                        <BiMailSend color="rgba(255,255,255,0.5)" size={25} />
+                        Dattanikaran25@gmail.com
+                      </div>
+                    </div>
+                    <div className="icons">
+                      <FaGithub className="icon"  color="rgba(255,255,255,0.5)" />
+                      <BiLogoLinkedin className="icon"  color="rgba(255,255,255,0.5)" />
+                      <FaTwitter className="icon"  color="rgba(255,255,255,0.5)" />
+                      <FaInstagram className="icon"  color="rgba(255,255,255,0.5)" />
                     </div>
                   </div>
                 </div>

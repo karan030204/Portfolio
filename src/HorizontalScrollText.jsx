@@ -1,17 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-const HorizontalScrollText = ({ children }) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+const MovingText = ({ direction, pixelsToMove, children }) => {
+  const textRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
+      const textElement = textRef.current;
+      const scrollOffset = window.scrollY;
+      let transformStyle = '';
+
+      if (direction === 'up') {
+        transformStyle = `translateY(-${scrollOffset * pixelsToMove}px)`;
+      } else if (direction === 'down') {
+        transformStyle = `translateY(${scrollOffset * pixelsToMove}px)`;
+      } else if (direction === 'left') {
+        transformStyle = `translateX(-${scrollOffset * pixelsToMove}px)`;
+      } else if (direction === 'right') {
+        transformStyle = `translateX(${scrollOffset * pixelsToMove}px)`;
+      }
+
+      textElement.style.transform = transformStyle;
     };
 
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      handleScroll(); // Update the text position on resize as well
     };
+
+    handleScroll(); // Initial position update
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
@@ -20,26 +35,13 @@ const HorizontalScrollText = ({ children }) => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
-
-  const translateX = (+scrollPosition % windowWidth) - windowWidth + 900;
-
-  const getTransformValue = () => {
-    return `translateX(${translateX}px)`;
-  };
+  }, [direction, pixelsToMove]);
 
   return (
-    <div
-      style={{
-        whiteSpace: 'nowrap',
-        overflowX: 'hidden',
-        transform: getTransformValue(),
-        transition: 'transform 0.1s ease',
-      }}
-    >
+    <div ref={textRef} style={{ position: 'relative' }}>
       {children}
     </div>
   );
 };
 
-export default HorizontalScrollText;
+export default MovingText;

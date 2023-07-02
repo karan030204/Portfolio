@@ -47,12 +47,13 @@
 
 .hero-bg-content .hero-description {
   position: absolute;
+  top: 120px;
   right: 150px;
-  bottom: 150px;
-  font-weight: 100;
+  /* bottom: 150px; */
+  font-weight: 900;
   text-align: right;
   font-family: "Lato";
-  font-size: 20px;
+  font-size: 50px;
   line-height: 1.6em;
   letter-spacing: 1.5px;
 }
@@ -68,79 +69,65 @@
 }
 
 .hero-moving-text {
-  position: relative;
-  top: 0px;
-  left: 1500px;
+  position: absolute;
+  top: 500px;
+  left: -100px;
   font-family: "Lato";
   font-weight: 900;
   z-index: 100;
   color: rgba(255, 255, 255, 0.15);
-  font-size: 100px;
+  font-size: 17vw;
   transition: transform 2s ease;
   white-space: nowrap;
   z-index: -1;
 }
 
 .hero-moving-text1 {
-  position: relative;
-  left: 350px;
+  position: absolute;
+  top: 500px;
+  left: -300px;
   font-family: "Lato";
-  color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 900;
   z-index: -1;
-  font-size: 200px;
+  font-size: 17vw;
   transition: transform 0.3s ease;
   white-space: nowrap;
+  transform: rotate(90deg);
 }
 
 /* hero-bg-image */
-
-/* Right navbar */
-.right_navbar_body {
-  position: absolute;
-  right: 15px;
-  top: 400px;
-  /* overflow: scroll;  */
-  overflow-x: hidden;
-  /* height: 100%; */
-  margin: 0;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
-.right_navbar {
-  float: right;
-}
-.right_navbar_ul {
+.hero-content .image{
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  height: 100vh;
   align-items: center;
+  justify-content: center;
+  /* align-items: center; */
 }
-
-.right_navbar li {
-  display: block;
-  margin: 0px 0px 0px 0px;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  padding: 30px 0px 0px 0px;
-}
-.right_navbar .border {
-  border-right: 1px solid white;
+.hero-content .image img{
+  box-shadow: 0 3px 10px rgb(255 255 255 / 0.3) ;
   position: absolute;
-  top: 110px;
-  width: 50px;
-  height: 50px;
+  width: 400px;
+  height: 550px;
 }
 
-.right_navbar_ul .icons {
-  padding-top: 70px;
-}
-.right_navbar li a {
-  text-decoration: none;
-  color: white;
-  font-family: "Inter";
-  font-weight: 300;
+@media screen and (max-width: 1199.98px) {
+  .hero-moving-text {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15vw;
+  }
+  
+  .hero-moving-text1 {
+    position: absolute;
+    /* top: 10%; */
+    top: 200px;
+    left: 100px;
+    transform: translate(-50%) ;
+    font-size: 15vw;
+  }
 }

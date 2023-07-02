@@ -9,6 +9,7 @@ import HomePage from './Pages/HomePage';
 import More_About_me from './Components/More_About_me';
 import Resume from './Components/Resume';
 import Mouse from './MouseMove';
+import MovingText from './HorizontalScrollText';
 
 function App() {
   return (

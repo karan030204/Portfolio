@@ -31,17 +31,17 @@ const Navbar1 = () => {
           <div className="inner-top-navbar">
             <div className="navbar-Logo">KD</div>
             <div className="navbar-hamburger">
-                <Hamburger
-                  easing="ease-in"
-                  color="white"
-                  toggle={handleHamburger}
-                  size={452}
-                  label="show menu"
-                  rounded
-                  distance={"lg"}
-                  toggled={isToggleClicked}
-                  onToggle={(toggled) => {}}
-                />
+              <Hamburger
+                easing="ease-in"
+                color="white"
+                toggle={handleHamburger}
+                size={452}
+                label="show menu"
+                rounded
+                distance={"lg"}
+                toggled={isToggleClicked}
+                onToggle={(toggled) => {}}
+              />
             </div>
           </div>
           {isToggleClicked && (
@@ -96,7 +96,7 @@ const Navbar1 = () => {
                     <h1 className="follow">For more Info.</h1>
                     <div className="contact-details">
                       <div className="phone_no">
-                        <BiSolidPhone  color="rgba(255,255,255,0.5)" size={25} />
+                        <BiSolidPhone color="rgba(255,255,255,0.5)" size={25} />
                         +91 9638935265
                       </div>
                       <div className="email_id">
@@ -105,12 +105,24 @@ const Navbar1 = () => {
                       </div>
                     </div>
                     <div className="icons">
-                      <FaGithub className="icon"  color="rgba(255,255,255,0.5)" />
-                      <BiLogoLinkedin className="icon"  color="rgba(255,255,255,0.5)" />
-                      <FaTwitter className="icon"  color="rgba(255,255,255,0.5)" />
-                      <FaInstagram className="icon"  color="rgba(255,255,255,0.5)" />
+                      <FaGithub
+                        className="icon"
+                        color="rgba(255,255,255,0.5)"
+                      />
+                      <BiLogoLinkedin
+                        className="icon"
+                        color="rgba(255,255,255,0.5)"
+                      />
+                      <FaTwitter
+                        className="icon"
+                        color="rgba(255,255,255,0.5)"
+                      />
+                      <FaInstagram
+                        className="icon"
+                        color="rgba(255,255,255,0.5)"
+                      />
                     </div>
-                  </div>
+                  </div>  
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@
   width: 100%;
   /* display: flex; */
   overflow-x: hidden;
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255,0);
   height: auto;
   padding: 15px 15px 10px 0;
   z-index: 999;
@@ -60,7 +60,7 @@
 
 .inner_menu .left-menu a {
   width: fit-content;
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.8);
   font-family: "Lato";
   font-size: 100px;
@@ -306,6 +306,92 @@
   word-break: break-word;
   z-index: -1;
 }
+@media screen and (min-width:1450px) {
+  .top-navbar .menu .inner_menu {
+    padding: 365px 10px 10px 0;
+  }
+
+  .inner_menu .left-menu a {
+    font-size: 140px;
+  }
+  .inner_menu .right-menu {
+    padding: 10px 10px 10px 0px;
+    gap: 20px;
+  }
+  .right-menu .lets-colloborate {
+    font-size: 65px;
+  }
+ 
+  .right-menu button {
+    font-size: 45px;
+    border-radius: 50px;
+    padding: 20px 60px;
+  }
+  .right-menu .follow {
+    font-size: 45px;
+  }
+
+  .right-menu .phone_no,
+  .right-menu .email_id {
+    font-size: 35px;
+  }
+
+  .center-big-text {
+    font-size: 600px;
+    top: 200px;
+  }
+
+ 
+
+  .right-menu .icon {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+}
+
+
+/* @media screen and (max-width:1399.98px) {
+  .top-navbar .menu .inner_menu {
+    padding: 365px 10px 10px 0;
+  }
+
+  .inner_menu .left-menu a {
+    font-size: 107px;
+  }
+  .inner_menu .right-menu {
+    padding: 10px 10px 10px 0px;
+    gap: 20px;
+  }
+  .right-menu .lets-colloborate {
+    font-size: 60px;
+  }
+ 
+  .right-menu button {
+    font-size: 40px;
+    border-radius: 50px;
+    padding: 20px 60px;
+  }
+  .right-menu .follow {
+    font-size: 40px;
+  }
+
+  .right-menu .phone_no,
+  .right-menu .email_id {
+    font-size: 30px;
+  }
+
+  .center-big-text {
+    font-size: 600px;
+    top: 200px;
+  }
+
+ 
+
+  .right-menu .icon {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+} */
 
 @media screen and (max-width: 1199.98px) {
   .top-navbar .menu .inner_menu {

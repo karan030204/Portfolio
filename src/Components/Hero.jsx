@@ -11,19 +11,32 @@ const Hero = () => {
     <>
       <div className="hero-section">
         <div className="hero-content">
-          {/* <div className="hero-bg-content">
-            <p className="hero-description">
+          <div className="hero-bg-content">
+            {/* <p className="hero-description">
               DESIGNER WITH A PASSION <br /> FOR CREATING INTUITIVE <br />{" "}
               DIGITAL EXPERIENCES
-            </p>
-          </div> */}
-
-          {/* <div className="image">
+            </p> */}
+            {/* <p className="hero-description1">
+              DESIGNER WITH A PASSION <br /> FOR CREATING INTUITIVE <br />{" "}
+              DIGITAL EXPERIENCES
+            </p> */}
+          </div>
+        {/* <div className="images"> 
+          <div className="image">
+            <img src="99.jpg" alt="" />
+          </div>
+           */}
+          {/* <div className="image3">
             <img src="16.jpg" alt="" />
           </div> */}
+          {/* <div className="image1">
+            <img src="95.jpg" alt="" />
+          </div> */}
+            {/* <div className="vignitte"></div> */}
+            {/* </div> */}
 
           <div className="hero-moving-text1">
-          <MovingText direction="left" pixelsToMove={2}>
+          <MovingText direction="right" pixelsToMove={2}>
             <p
               className="scrolling-text1"
               // style={{
@@ -37,7 +50,7 @@ const Hero = () => {
               
           </div>
           <div className="hero-moving-text">
-            <MovingText direction="right" pixelsToMove={2} >
+            <MovingText direction="left" pixelsToMove={2} >
             <p
               className="scrolling-text"
               // style={{

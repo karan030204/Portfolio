@@ -12,7 +12,7 @@ const HomePage = () => {
     <div>
         <Navbar1/>
         <Hero/>
-        <Experience/>
+        {/* <Experience/> */}
         {/* <About/> */}
         {/* <Tech/> */}
         {/* <Projects/> */}

@@ -84,43 +84,43 @@ const Navbar1 = () => {
                     <Mouse>
                       {/* <span className="contact-title">Contact</span> */}
                     </Mouse>
-                    <div className="lets-colloborate">Let's Collaborate!</div>
+                    <div className="lets-colloborate">HAVE AN IDEA?</div>
                     <div>
                       <Mouse>
-                        <button>Contact</button>
+                        <button>TELL ME ABOUT IT</button>
                       </Mouse>
                     </div>
                   </div>
 
                   <div>
-                    <h1 className="follow">For more Info.</h1>
+                    <h1 className="follow">DONT BE A STRANGER</h1>
                     <div className="contact-details">
-                      <div className="phone_no">
+                      {/* <div className="phone_no">
                         <BiSolidPhone color="rgba(255,255,255,0.5)" size={25} />
                         +91 9638935265
                       </div>
                       <div className="email_id">
                         <BiMailSend color="rgba(255,255,255,0.5)" size={25} />
                         Dattanikaran25@gmail.com
-                      </div>
+                      </div> */}
                     </div>
                     <div className="icons">
                       <FaGithub
                         className="icon"
                         color="rgba(255,255,255,0.5)"
-                      />
+                      />GH
                       <BiLogoLinkedin
                         className="icon"
                         color="rgba(255,255,255,0.5)"
-                      />
+                      />LD
                       <FaTwitter
                         className="icon"
                         color="rgba(255,255,255,0.5)"
-                      />
+                      />TW
                       <FaInstagram
                         className="icon"
                         color="rgba(255,255,255,0.5)"
-                      />
+                      />IN
                     </div>
                   </div>  
                 </div>
